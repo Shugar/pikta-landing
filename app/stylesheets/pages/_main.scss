@@ -1,0 +1,249 @@
+.head {
+  padding: 60px 0 80px;
+}
+
+.head-logo {
+  margin-bottom: 80px;
+  background: url('../images/logo.png') no-repeat center / contain;
+  width: 232px;
+  height: 64px;
+}
+
+.head-title {
+  max-width: 552px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 40px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.head-description {
+  max-width: 552px;
+  font-size: 16px;
+  color: #2E3092;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.head-icon {
+  background: url('../images/head-icon.svg') no-repeat center / contain;
+  width: 337px;
+  height: 225px;
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+}
+
+.team {
+
+}
+
+.team-title {
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 40px;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.team-photos {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.team-photo {
+  height: 290px;
+  width: 33.33%;
+  flex: 0 0 33.33%;
+}
+
+.team-photo--1 {
+  background: url('../images/photo-1.jpg') no-repeat center / cover;
+}
+
+.team-photo--2 {
+  background: url('../images/photo-2.jpg') no-repeat center / cover;
+}
+
+.team-photo--3 {
+  background: url('../images/photo-3.jpg') no-repeat center / cover;
+}
+
+.vacancy {
+  padding: 80px 0;
+}
+
+.vacancy-title {
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 32px;
+  color: #2E3192;
+  letter-spacing: 0;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.vacancy-title__icon {
+  margin-right: 24px;
+  width: 60px;
+  height: 60px;
+  background: url('../images/burger-logo.svg') no-repeat center / contain;
+}
+
+.vacancy-info {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.vacancy-item {
+  flex: 0 0 50%;
+
+  &:first-child .vacancy-item__title {
+    color: #50B848;
+  }
+
+  &:last-child .vacancy-item__title {
+    color: #2E3192;
+  }
+}
+
+.vacancy-item__title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0;
+}
+
+.vacancy-item__text {
+  max-width: 417px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #797979;
+  letter-spacing: 0;
+}
+
+.button {
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 40px;
+  background: #EF4060;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  padding: 15px 21px;
+}
+
+.footer {
+  background: #2E3192;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 60px;
+}
+
+.footer-icon {
+  margin-right: 32px;
+  width: 109px;
+  height: 67px;
+  background: url('../images/footer-icon.svg') no-repeat center / contain;
+}
+
+.footer-number {
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.footer-socials {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.footer-socials__facebook {
+  margin-right: 16px;
+  background: url('../images/facebook.svg') no-repeat center / contain;
+  width: 24px;
+  height: 24px;
+}
+
+.footer-socials__telegram {
+  margin-right: 16px;
+  background: url('../images/telegram.svg') no-repeat center / contain;
+  width: 24px;
+  height: 24px;
+}
+
+.footer-socials__instagram {
+  margin-right: 16px;
+  background: url('../images/instagram.svg') no-repeat center / contain;
+  width: 24px;
+  height: 24px;
+}
+
+.footer-socials__skype {
+  background: url('../images/skype.svg') no-repeat center / contain;
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  .head-icon {
+    width: 162px;
+    height: 106px;
+  }
+
+  .vacancy-info {
+    display: block;
+  }
+
+  .vacancy-item:first-child {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  .head-icon {
+    display: none;
+  }
+
+  .head-title,
+  .team-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .team-photos {
+    display: block;
+  }
+
+  .team-photo {
+    width: 100%;
+  }
+
+  .vacancy {
+    padding: 60px 0;
+  }
+
+  .vacancy-title {
+    font-size: 24px;
+  }
+
+  .footer {
+    padding: 24px 20px;
+  }
+
+  .footer-icon {
+    display: none;
+  }
+}
